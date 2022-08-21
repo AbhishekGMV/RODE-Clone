@@ -6,33 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RODE</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
     <script>
       tailwind.config = {
         theme: {
           colors: {
-            clifford: "#da373d",
+            theme: "#ad9970",
+          },
+          backgroundImage: {
+            "hero-title":
+              "url(https://edge.rode.com/images/page/1/modules/5813/RODECasterProII_PL_PI_01.svg)",
+          },
+          fontFamily: {
+            inter: ["Inter", "ui-sans-serif", "system-ui"],
           },
         },
       };
     </script>
   </head>
-  <body>
+  <body class="font-inter">
     <header>
-      <nav class="w-[1140px] m-auto p-6 flex justify-between">
+      <nav class="p-2 flex justify-between">
+        <button>
+          <div class="h-[2px] w-4 m-1 bg-[black]"></div>
+          <div class="h-[2px] w-4 m-1 bg-[black]"></div>
+          <div class="h-[2px] w-4 m-1 bg-[black]"></div>
+        </button>
         <img
           src="https://cdn.rode.com/website/images/logo/RODE_Logo_87x51_RGB.svg"
           class="w-[80px]"
           alt="logo"
         />
-        <ul class="flex">
-          <li class="py-2 px-4"><a href="">PRODUCTS</a></li>
-          <li class="py-2 px-4"><a href="">USER GUIDES</a></li>
-          <li class="py-2 px-4"><a href="">SOLUTIONS </a></li>
-          <li class="py-2 px-4"><a href="">APPAREL </a></li>
-          <li class="py-2 px-4"><a href="">SUPPORT</a></li>
+        <ul class="hidden">
+          <li class="md:p-10"><a href="">PRODUCTS</a></li>
+          <li class=""><a href="">USER GUIDES</a></li>
+          <li class=""><a href="">SOLUTIONS </a></li>
+          <li class=""><a href="">APPAREL </a></li>
+          <li class=""><a href="">SUPPORT</a></li>
         </ul>
-        <img src="https://rode.com/svgs/magnify_glass.svg" alt="search" />
+        <img
+          src="assets/search-glass.svg"
+          class="h-[30px] p-1 cursor-pointer"
+        />
       </nav>
     </header>
+
+    <section class="hero">
+      <img
+        src="https://edge.rode.com/images/page/1/modules/5813/rode-rodecaster-pro-II-home-page-1920x700-rgb.jpg"
+        class="hidden md:block"
+        alt=""
+      />
+      <img
+        src="https://edge.rode.com/images/page/1/modules/5813/rode-rodecaster-pro-II-home-page-800x700-rgb.jpg"
+        alt=""
+        class="block md:hidden"
+      />
+      <div class="p-4 bg-[black]">
+        <img
+          src="https://edge.rode.com/images/page/1/modules/5813/RODECasterProII_PL_PI_01.svg"
+          alt=""
+        />
+      </div>
+      <div class="px-4 bg-[black]">
+        <h1 class="p-2 text-center text-2xl text-[white]">
+          The Revolution Is Here
+        </h1>
+        <p class="p-2 text-[white] text-md opacity-50">
+          The RØDECaster Pro II is the world's most powerful all-in-one audio
+          solution for streamers, podcasters, musicians, and creators. Take your
+          content to the next level.
+        </p>
+      </div>
+      <div class="flex justify-center p-4 bg-[black]">
+        <a
+          class="uppercase text-theme font-semibold text-lg my-4 px-4 py-2"
+          href=""
+          >Learn More ></a
+        >
+        <a
+          class="uppercase bg-theme rounded-full font-semibold text-lg text-[white] my-4 px-6 py-2 hover:text-theme hover:bg-[white]"
+          href=""
+          >Buy Now</a
+        >
+      </div>
+    </section>
   </body>
 </html>
