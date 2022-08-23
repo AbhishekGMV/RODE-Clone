@@ -17,12 +17,17 @@
           colors: {
             theme: "#ad9970",
             secondary: "#767676",
+            "gray-100": "#464646",
             "black-400": "#b7b7b7",
             "black-500": "#212529",
             "black-600": "#262626",
             "white-600": "#F9F9F9",
           },
           backgroundImage: {
+            "hero-img-desktop":
+              "url(https://edge.rode.com/images/page/1/modules/5813/rode-rodecaster-pro-II-home-page-1920x700-rgb.jpg)",
+            "hero-img-tab":
+              "url(https://edge.rode.com/images/page/1/modules/5813/rode-rodecaster-pro-II-home-page-800x700-rgb.jpg)",
             "hero-title":
               "url(https://edge.rode.com/images/page/1/modules/5813/RODECasterProII_PL_PI_01.svg)",
           },
@@ -35,9 +40,11 @@
   </head>
 
   <body class="font-inter">
-    <header class="h-[2rem]">
-      <nav class="bg-white-600 z-10 w-full p-2 flex justify-between fixed">
-        <button>
+    <header class="h-[3rem]">
+      <nav
+        class="bg-white-600 z-10 w-full p-2 flex justify-between fixed md:p-8"
+      >
+        <button class="md:hidden">
           <div class="h-[2px] w-4 m-1 bg-[black]"></div>
           <div class="h-[2px] w-4 m-1 bg-[black]"></div>
           <div class="h-[2px] w-4 m-1 bg-[black]"></div>
@@ -47,8 +54,8 @@
           class="w-[80px]"
           alt="logo"
         />
-        <ul class="hidden">
-          <li class="md:p-10"><a href="">PRODUCTS</a></li>
+        <ul class="hidden md:flex items-center gap-8">
+          <li class=""><a href="">PRODUCTS</a></li>
           <li class=""><a href="">USER GUIDES</a></li>
           <li class=""><a href="">SOLUTIONS </a></li>
           <li class=""><a href="">APPAREL </a></li>
@@ -61,13 +68,8 @@
       </nav>
     </header>
 
-    <!-- hero section -->
-    <section class="hero">
-      <img
-        src="https://edge.rode.com/images/page/1/modules/5813/rode-rodecaster-pro-II-home-page-1920x700-rgb.jpg"
-        class="hidden md:block"
-        alt=""
-      />
+    <!-- hero mobile layout -->
+    <section class="hero md:hidden">
       <img
         src="https://edge.rode.com/images/page/1/modules/5813/rode-rodecaster-pro-II-home-page-800x700-rgb.jpg"
         alt=""
@@ -79,32 +81,73 @@
           alt=""
         />
       </div>
-      <div class="px-4 bg-[black]">
-        <h1 class="p-2 text-center text-2xl text-[white]">
-          The Revolution Is Here
-        </h1>
-        <p class="p-2 text-[white] text-md opacity-50">
-          The RØDECaster Pro II is the world's most powerful all-in-one audio
-          solution for streamers, podcasters, musicians, and creators. Take your
-          content to the next level.
-        </p>
-      </div>
-      <div class="flex justify-center p-4 bg-[black]">
-        <a
-          class="uppercase text-theme font-semibold text-lg my-4 px-4 py-2"
-          href=""
-          >Learn More ></a
-        >
-        <a
-          class="uppercase bg-theme rounded-full font-semibold text-lg text-[white] my-4 px-6 py-2 hover:text-theme hover:bg-[white]"
-          href=""
-          >Buy Now</a
-        >
+      <div>
+        <div class="px-4 bg-[black]">
+          <h1 class="p-2 text-center text-2xl text-[white]">
+            The Revolution Is Here
+          </h1>
+          <p class="p-2 text-[white] text-md opacity-50">
+            The RØDECaster Pro II is the world's most powerful all-in-one audio
+            solution for streamers, podcasters, musicians, and creators. Take
+            your content to the next level.
+          </p>
+        </div>
+        <div class="flex justify-center p-4 bg-[black]">
+          <a
+            class="uppercase text-theme font-semibold text-lg my-4 px-4 py-2"
+            href=""
+            >Learn More ></a
+          >
+          <a
+            class="uppercase bg-theme rounded-full font-semibold text-lg text-[white] my-4 px-6 py-2 hover:text-theme hover:bg-[white]"
+            href=""
+            >Buy Now</a
+          >
+        </div>
       </div>
     </section>
 
-    <!-- products section -->
-    <section class="products">
+    <!-- hero desktop layout -->
+    <section
+      class="hero sm:hidden md:block bg-hero-img-desktop h-[93vh] bg-no-repeat bg-center relative"
+    >
+      <div class="absolute top-0 right-0 h-full flex h-full">
+        <div class="h-full"></div>
+        <div class="p-4 flex flex-col justify-center w-1/2 ml-[40%]">
+          <img
+            src="https://edge.rode.com/images/page/1/modules/5813/RODECasterProII_PL_PI_01.svg"
+            alt=""
+          />
+          <div>
+            <div class="p-4">
+              <h1 class="p-2 text-center text-2xl text-[white]">
+                The Revolution Is Here
+              </h1>
+              <p class="p-2 text-[white] text-center text-md opacity-50">
+                The RØDECaster Pro II is the world's most powerful all-in-one
+                audio solution for streamers, podcasters, musicians, and
+                creators. Take your content to the next level.
+              </p>
+            </div>
+            <div class="flex justify-center p-4">
+              <a
+                class="uppercase text-theme font-semibold text-lg my-4 px-4 py-2"
+                href=""
+                >Learn More ></a
+              >
+              <a
+                class="uppercase bg-theme rounded-full font-semibold text-lg text-[white] my-4 px-6 py-2 hover:text-theme hover:bg-[white]"
+                href=""
+                >Buy Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- products mobile section -->
+    <section class="products md:hidden">
       <!-- product -->
       <div class="py-2 bg-[white]">
         <img
@@ -273,6 +316,13 @@
           >
         </div>
       </div>
+    </section>
+
+    <section class="h-[100vh]">
+      <img
+        src="https://edge.rode.com/images/page/1/modules/5873/rode-nth100-lifestyle-insitu-female-looking-down-grey-1920x700-rgb.jpg"
+        alt=""
+      />
     </section>
 
     <!-- Explore section  -->
