@@ -530,7 +530,7 @@
       </h1>
 
       <!-- explore -->
-      <div class="mx-2 my-4 flex justify-center">
+      <div class="mx-2 my-4 flex justify-center hover:brightness-75">
         <a class="relative block" href="">
           <img
             class=""
@@ -546,7 +546,7 @@
       </div>
 
       <!-- explore -->
-      <div class="mx-2 my-4 flex justify-center">
+      <div class="mx-2 my-4 flex justify-center hover:brightness-75">
         <a class="relative block" href="">
           <img
             class=""
@@ -562,7 +562,7 @@
       </div>
 
       <!-- explore -->
-      <div class="mx-2 my-4 flex justify-center">
+      <div class="mx-2 my-4 flex justify-center hover:brightness-75">
         <a class="relative block" href="">
           <img
             class=""
@@ -578,7 +578,7 @@
       </div>
 
       <!-- explore -->
-      <div class="mx-2 my-4 flex justify-center">
+      <div class="mx-2 my-4 flex justify-center hover:brightness-75">
         <a class="relative block" href="">
           <img
             class=""
@@ -693,60 +693,93 @@
       </div>
     </section>
 
-    <footer class="my-4 p-4">
+    <footer class="my-4 p-4 max-w-[1124px] m-auto mt-[100px]">
+      <hr class="w-full hidden md:block opacity-10" />
       <!-- footer-menu -->
-      <div>
-        <div class="flex justify-center my-4">
+      <div class="md:flex justify-evenly gap-6">
+        <div class="flex justify-center my-4 md:block md:mx-10">
           <img
             class="w-[90px] h-[90px]"
             src="https://cdn.rode.com/website/images/logo/RODE_logo_142x85_desktop_light_mode.svg"
             alt=""
           />
         </div>
-        <div class="my-8">
+
+        <div class="my-8 px-4 md:flex justify-center md:my-0 md:mb-8 gap-4">
           <div
-            class="p-4 border-solid border-t-[1px] border-b-[1px] border-black-400 flex justify-between"
+            class="p-4 border-solid border-t-[1px] border-b-[1px] border-black-400 flex justify-between items-center md:block md:border-0"
           >
-            <h4>Products</h4>
+            <h4 class="font-semibold my-4">Products</h4>
             <i
-              class="fa fa-plus text-2xl cursor-pointer"
+              class="fa fa-plus text-2xl cursor-pointer md:hidden"
               aria-hidden="true"
             ></i>
+            <ul
+              class="hidden md:flex flex-col gap-2 list-none whitespace-nowrap opacity-75"
+            >
+              <li><a href=""> Microphones</a></li>
+              <li><a href="">Headphones</a></li>
+              <li><a href="">Interfaces and Mixers</a></li>
+              <li><a href="">Accessories</a></li>
+              <li><a href="">Software</a></li>
+              <li><a href="">Apparel</a></li>
+            </ul>
           </div>
           <div
-            class="p-4 border-solid border-b-[1px] border-black-400 flex justify-between"
+            class="p-4 border-solid border-b-[1px] border-black-400 flex justify-between items-center md:block md:border-0"
           >
-            <h4>Support</h4>
+            <h4 class="font-semibold my-4">Support</h4>
             <i
-              class="fa fa-plus text-2xl cursor-pointer"
+              class="fa fa-plus text-2xl cursor-pointer md:hidden"
               aria-hidden="true"
             ></i>
+            <ul
+              class="hidden md:flex flex-col gap-2 list-none whitespace-nowrap opacity-75"
+            >
+              <li><a href="">Contact RØDE</a></li>
+              <li><a href="">Service Centre</a></li>
+              <li><a href="">Warranty</a></li>
+              <li><a href="">Where to Buy</a></li>
+            </ul>
           </div>
-          <div
-            class="p-4 border-solid border-b-[1px] border-black-400 flex justify-between"
-          >
-            <h4>Company</h4>
-            <i
-              class="fa fa-plus text-2xl cursor-pointer"
-              aria-hidden="true"
-            ></i>
-          </div>
-          <div
-            class="p-4 border-solid border-b-[1px] border-black-400 flex justify-between"
-          >
-            <h4>Account</h4>
-            <i
-              class="fa fa-plus text-2xl cursor-pointer"
-              aria-hidden="true"
-            ></i>
+          <div class="wrapper">
+            <div
+              class="p-4 border-solid border-b-[1px] border-black-400 flex justify-between items-center md:block md:border-0 md:p-0 md:pt-4"
+            >
+              <h4 class="font-semibold my-4">Company</h4>
+              <i
+                class="fa fa-plus text-2xl cursor-pointer md:hidden"
+                aria-hidden="true"
+              ></i>
+              <ul class="hidden md:flex flex-col gap-2 list-none opacity-75">
+                <li><a href="">About RØDE</a></li>
+                <li><a href="">News and Info</a></li>
+                <li><a href="">Job Opportunities</a></li>
+              </ul>
+            </div>
+            <div
+              class="p-4 border-solid border-b-[1px] border-black-400 flex justify-between items-center md:block md:border-0 md:p-0"
+            >
+              <h4 class="font-semibold my-4">Account</h4>
+              <i
+                class="fa fa-plus text-2xl cursor-pointer md:hidden"
+                aria-hidden="true"
+              ></i>
+              <ul
+                class="hidden md:flex flex-col gap-2 list-none whitespace-nowrap opacity-75"
+              >
+                <li><a href="">Manage your Account</a></li>
+                <li><a href="">Create Account</a></li>
+              </ul>
+            </div>
           </div>
         </div>
 
-        <div>
-          <h1 class="text-2xl p-4 font-semibold text-center">
+        <div class="px-4">
+          <h1 class="text-2xl p-4 font-semibold text-center md:text-right">
             Subscribe to our latest news and offers
           </h1>
-          <div class="w-full flex justify-center">
+          <div class="w-full flex justify-center md:justify-end">
             <a
               class="uppercase bg-theme rounded-full inline-block font-semibold text-lg text-[white] my-4 px-6 py-2 hover:text-theme hover:bg-[white] border-solid border-[2px] hover:border-theme"
               href=""
@@ -755,24 +788,30 @@
           </div>
         </div>
       </div>
-
-      <div class="wrapper gap-2 flex justify-center items-center">
-        <a class="text-xs" href="">Privacy Policy</a>
-        <span>|</span>
-        <a class="text-xs" href="">Terms & Conditions</a>
-      </div>
-
-      <!-- social -->
-      <div class="social-links my-4">
-        <div class="flex justify-center gap-6">
-          <a href=""> <i class="fab fa-facebook text-theme text-2xl"></i> </a>
-          <a href=""><i class="fab fa-twitter text-theme text-2xl"></i></a>
-          <a href=""><i class="fab fa-instagram text-theme text-2xl"></i></a>
-          <a href=""><i class="fab fa-youtube text-theme text-2xl"></i></a>
-          <a href=""><i class="fab fa-tiktok text-theme text-2xl"></i></a>
+      <hr class="w-full hidden md:block opacity-10" />
+      <div class="md:flex justify-between items-center">
+        <div
+          class="wrapper gap-2 flex justify-center items-center md:order-1 md:opacity-75"
+        >
+          <a class="text-xs" href="">Privacy Policy</a>
+          <span>|</span>
+          <a class="text-xs" href="">Terms & Conditions</a>
         </div>
+
+        <!-- social -->
+        <div class="social-links my-4 md:order-1">
+          <div class="flex justify-center gap-6">
+            <a href=""> <i class="fab fa-facebook text-theme text-2xl"></i> </a>
+            <a href=""><i class="fab fa-twitter text-theme text-2xl"></i></a>
+            <a href=""><i class="fab fa-instagram text-theme text-2xl"></i></a>
+            <a href=""><i class="fab fa-youtube text-theme text-2xl"></i></a>
+            <a href=""><i class="fab fa-tiktok text-theme text-2xl"></i></a>
+          </div>
+        </div>
+        <p class="text-center md:opacity-75">
+          © 2022 RØDE All Rights Reserved.
+        </p>
       </div>
-      <p class="text-center">© 2022 RØDE All Rights Reserved.</p>
     </footer>
   </body>
 </html>
